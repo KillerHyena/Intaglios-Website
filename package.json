@@ -1,0 +1,13 @@
+{
+    "name": "intaglios-website",
+    "version": "1.0.0",
+    "description": "Website deployed using Node.js and Express.js",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
