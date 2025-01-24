@@ -149,6 +149,30 @@ footer {
     animation: fadeIn 2.5s ease-out;
 }
 
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 50px; /* Set the logo size */
+    margin-right: 20px; /* Add space between the logo and text */
+}
+
+.footer-text h1 {
+    font-size: 20px; /* Adjust font size of the title */
+    margin: 0; /* Remove margin */
+}
+
+.footer-text p {
+    font-size: 14px; /* Adjust font size of the description */
+    margin: 0; /* Remove margin */
+    opacity: 0.8; /* Add a slightly faded look */
+}
+
 /* Animations */
 @keyframes slideIn {
     from {

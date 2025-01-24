@@ -136,11 +136,62 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    background-color: #222;
     color: white;
+    padding: 20px;
     text-align: center;
 }
+
+/* Footer Content Styles */
+.footer-content {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.footer-logo {
+    width: 30px; /* Adjusted for a smaller logo */
+    height: 30px; /* Ensuring it remains proportional */
+    margin: 0; /* Removed unnecessary spacing */
+}
+
+/* Footer Text */
+.footer-text {
+    text-align: left; /* Align text to the left of the image */
+}
+
+.footer-text h1 {
+    font-size: 16px; /* Slightly smaller font size for better proportions */
+    margin: 0;
+}
+
+.footer-text p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack content for smaller screens */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto; /* Center the logo on mobile */
+    }
+
+    .footer-text {
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -150,6 +201,19 @@ footer {
 
     .hamburger {
         display: block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto;
+    }
+
+    .footer-text {
+        text-align: center;
     }
 }
 

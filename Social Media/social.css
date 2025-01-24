@@ -70,7 +70,7 @@ header nav ul li a:hover {
     letter-spacing: 1px;
 }
 
-.social-media p {
+social-media p {
     font-size: 18px;
     margin-bottom: 40px;
     font-weight: 300;
@@ -124,9 +124,88 @@ header nav ul li a:hover {
 footer {
     background-color: #222;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+}
+
+/* Footer Content Styles */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensures the image and text align properly */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 30px; /* Adjusted for a smaller logo */
+    height: 30px; /* Ensuring it remains proportional */
+    margin: 0; /* Removed unnecessary spacing */
+}
+
+.footer-text {
+    text-align: left; /* Aligns text to the left of the image */
+}
+
+.footer-text h1 {
+    font-size: 16px; /* Slightly smaller font size for better proportions */
+    margin: 0;
+}
+
+.footer-text p {
     font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack content for smaller screens */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto; /* Center the logo on mobile */
+    }
+
+    .footer-text {
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+
+/* Footer Content Styles */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 40px; /* Smaller logo */
+    height: 40px; /* Ensuring it remains proportional */
+    margin-right: 10px; /* Spacing between logo and text */
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer-text h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-text p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
 }
 
 /* Mobile Responsive Styles */
@@ -154,6 +233,19 @@ footer {
     .social-link {
         width: 80%;
         padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto;
+    }
+
+    .footer-text {
+        text-align: center;
     }
 }
 
