@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Heads - Intaglios</title>
+    <script type="module" crossorigin src="heads.js"></script>
+    <link rel="stylesheet" href="heads.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="../Homepage/index.html">Home</a></li>
+                <li><a href="../About Us/aboutus.html">About Us</a></li>
+                <li><a href="../Artwork Section/artwork.html">Artwork Section</a></li>
+                <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                <li><a href="../Social Media/social.html">Social Media</a></li>
+                <li><a href="../Society Heads/heads.html">Society Heads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="society-heads">
+        <h2>Meet the Society Heads of Intaglios</h2>
+
+        <div class="team">
+            <!-- President -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/president1.jpg" alt="President Photo 1" class="member-photo">
+                    <img src="images/president2.jpg" alt="President Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>President</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+
+            <!-- Vice President -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/vice_president1.jpg" alt="Vice President Photo 1" class="member-photo">
+                    <img src="images/vice_president2.jpg" alt="Vice President Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>Vice President</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+
+            <!-- Joint GenSec -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/joint_gensec1.jpg" alt="Joint GenSec Photo 1" class="member-photo">
+                    <img src="images/joint_gensec2.jpg" alt="Joint GenSec Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>Joint GenSec</h3>
+                    <p class="name"></p>
+                    <p class="intro">.</p>
+                </div>
+            </div>
+
+            <!-- Event Heads -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/event_head1.jpg" alt="Event Head Photo 1" class="member-photo">
+                    <img src="images/event_head2.jpg" alt="Event Head Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>Event Head</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+
+            <!-- PR Head -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/pr_head1.jpg" alt="PR Head Photo 1" class="member-photo">
+                    <img src="images/pr_head2.jpg" alt="PR Head Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>PR Head</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+
+            <!-- Creative Head -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/creative_head1.jpg" alt="Creative Head Photo 1" class="member-photo">
+                    <img src="images/creative_head2.jpg" alt="Creative Head Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>Creative Head</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+
+            <!-- Social Media Head -->
+            <div class="member">
+                <div class="photo-container">
+                    <img src="images/social_media_head1.jpg" alt="Social Media Head Photo 1" class="member-photo">
+                    <img src="images/social_media_head2.jpg" alt="Social Media Head Photo 2" class="member-photo">
+                </div>
+                <div class="member-info">
+                    <h3>Social Media Head</h3>
+                    <p class="name"></p>
+                    <p class="intro"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p align="center">&copy; 2025 Intaglios. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

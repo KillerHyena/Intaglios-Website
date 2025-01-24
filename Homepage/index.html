@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intaglios : The Design Society of NSUT</title>
+    <script type="module" crossorigin src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="../Homepage/index.html">Home</a></li>
+                <li><a href="../About Us/aboutus.html">About Us</a></li>
+                <li><a href="../Artwork Section/artwork.html">Artwork Section</a></li>
+                <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                <li><a href="../Social Media/social.html">Social Media</a></li>
+                <li><a href="../Society Heads/heads.html">Society Heads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Intaglios - The Design Society of NSUT</h1>
+        <p>Crafting Creativity & Designing Futures.</p>
+        <a href="../About Us/aboutus.html" class="cta-button">Learn More</a>
+    </section>
+    
+    <footer>
+        <p align="center">&copy; 2025 Intaglios. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

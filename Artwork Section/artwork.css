@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9f00, #ff6b6b, #c56cf0);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite; /* Smooth gradient animation */
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: rgba(34, 34, 34, 0.8);  /* Semi-transparent dark header */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9f00;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+/* Artwork Section */
+.artwork {
+    background: linear-gradient(135deg, #ff6b6b, #ff9f00, #c56cf0); /* Colorful gradient for the entire section */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+}
+
+.artwork h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.artwork p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+/* Artwork Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Artwork Item with Gradient Background */
+.artwork-item {
+    background: linear-gradient(135deg, #ff9f00, #ff6b6b, #c56cf0); /* Colorful gradient for each item */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.artwork-item img:hover {
+    transform: scale(1.1);
+}
+
+.artwork-info {
+    padding: 20px;
+}
+
+.artwork-info h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.artwork-info p {
+    color: #555;
+    font-size: 16px;
+}
+
+.art-description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent footer */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media - Intaglios</title>
+    <script type="module" crossorigin src="social.js"></script>
+    <link rel="stylesheet" href="social.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="../Homepage/index.html">Home</a></li>
+                <li><a href="../About Us/aboutus.html">About Us</a></li>
+                <li><a href="../Artwork Section/artwork.html">Artwork Section</a></li>
+                <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                <li><a href="../Social Media/social.html">Social Media</a></li>
+                <li><a href="../Society Heads/heads.html">Society Heads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="social-media">
+        <h2>Follow Us on Social Media</h2>
+        <p>Stay connected with Intaglios - The Design Society of NSUT through our social media handles:</p>
+        
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/intaglios.nsut/?hl=en" target="_blank" class="social-link instagram">
+                <img src="instagram.jpeg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/people/Intaglios-Nsut/pfbid0rz9w2r2jtssiYRHL58XjghJPMp49nfdqGUdFvrEmNjksxvYnveMLcR1nbz3CW2fYl/" target="_blank" class="social-link facebook">
+                <img src="facebook.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+
+            <!-- Linktree -->
+            <a href="https://linktr.ee/intaglios.nsut" target="_blank" class="social-link linktree">
+                <img src="linktree.png" alt="Linktree">
+                <span>Linktree</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/intaglios?trk=similar-pages" target="_blank" class="social-link linkedin">
+                <img src="linkdln.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p align="center">&copy; 2024 Intaglios. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

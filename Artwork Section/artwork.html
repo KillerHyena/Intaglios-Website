@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Section - Intaglios</title>
+    <script type="module" crossorigin src="artwork.js"></script>
+    <link rel="stylesheet" href="artwork.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="../Homepage/index.html">Home</a></li>
+                <li><a href="../About Us/aboutus.html">About Us</a></li>
+                <li><a href="../Artwork Section/artwork.html">Artwork Section</a></li>
+                <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                <li><a href="../Social Media/social.html">Social Media</a></li>
+                <li><a href="../Society Heads/heads.html">Society Heads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="artwork">
+        <h2>Artwork by Our Members</h2>
+        <p>Explore the creative works of our talented society members, showcasing their passion for design and innovation.</p>
+
+        <div class="gallery">
+            <!-- Artwork Item 1 -->
+            <div class="artwork-item">
+                <img src="images/artwork1.jpg" alt="Artwork 1">
+                <div class="artwork-info">
+                    <h3>Artwork Title</h3>
+                    <p>By: Member Name</p>
+                    <p class="art-description">A brief description of the artwork goes here. This piece explores the theme of creativity and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 2 -->
+            <div class="artwork-item">
+                <img src="images/artwork2.jpg" alt="Artwork 2">
+                <div class="artwork-info">
+                    <h3>Artwork Title</h3>
+                    <p>By: Member Name</p>
+                    <p class="art-description">A brief description of the artwork goes here. This piece explores the theme of creativity and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 3 -->
+            <div class="artwork-item">
+                <img src="images/artwork3.jpg" alt="Artwork 3">
+                <div class="artwork-info">
+                    <h3>Artwork Title</h3>
+                    <p>By: Member Name</p>
+                    <p class="art-description">A brief description of the artwork goes here. This piece explores the theme of creativity and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 4 -->
+            <div class="artwork-item">
+                <img src="images/artwork4.jpg" alt="Artwork 4">
+                <div class="artwork-info">
+                    <h3>Artwork Title</h3>
+                    <p>By: Member Name</p>
+                    <p class="art-description">A brief description of the artwork goes here. This piece explores the theme of creativity and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p align="center">&copy; 2025 Intaglios. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
