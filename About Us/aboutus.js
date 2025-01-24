@@ -8,4 +8,13 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
 });
 
-// Optionally, you can add more interactivity for this page (e.g., animations on scroll)
+// Adding animations on scroll
+window.addEventListener("scroll", () => {
+    const aboutSection = document.querySelector(".about");
+    const sectionPosition = aboutSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if (sectionPosition < screenPosition) {
+        aboutSection.style.animation = "fadeInUp 1.5s ease-out forwards";
+    }
+});
