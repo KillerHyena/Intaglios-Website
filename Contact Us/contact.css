@@ -11,6 +11,9 @@ body {
     background: linear-gradient(45deg, #ff6347, #ff7f50, #ff8c00);
     color: #333;
     overflow-x: hidden;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styles */
@@ -171,122 +174,68 @@ ul li a:hover::before {
 footer {
     background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    margin-top: auto;
 }
 
 /* Footer Content Styles */
 .footer-content {
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Logo Styles */
+/* Logo Section */
 .footer-logo {
-    width: 30px; /* Adjusted for a smaller logo */
-    height: 30px; /* Ensuring it remains proportional */
-    margin: 0; /* Removed unnecessary spacing */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 /* Footer Text */
 .footer-text {
-    text-align: left; /* Align text to the left of the image */
+    text-align: center;
 }
 
 .footer-text h1 {
-    font-size: 16px; /* Slightly smaller font size for better proportions */
-    margin: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .footer-text p {
-    font-size: 14px;
-    margin: 0;
+    font-size: 1.4em;
     opacity: 0.8;
+}
+
+/* Footer Social Media */
+.footer-social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-social-media a {
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-media a:hover {
+    color: #ff6347;
 }
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Stack content for smaller screens */
-        text-align: center;
-        gap: 10px;
-    }
-
-    .footer-logo {
-        margin: 0 auto 10px auto; /* Center the logo on mobile */
+        gap: 15px;
     }
 
     .footer-text {
-        text-align: center; /* Ensure text is centered */
-    }
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    animation: fadeIn 2s ease-out;
-}
-
-/* Animations */
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
         text-align: center;
-        background-color: #333;
-    }
-
-    ul li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .active {
-        display: flex;
-    }
-
-    .contact {
-        padding: 20px;
     }
 }

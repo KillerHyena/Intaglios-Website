@@ -11,6 +11,11 @@ body {
     background: linear-gradient(45deg, #ff6347, #ff7f50, #ff8c00);
     color: #333;
     overflow-x: hidden;
+    padding-bottom: 0; /* Ensure no extra padding below */
+    margin-bottom: 0; /* Ensure no extra margin below */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styles */
@@ -144,33 +149,56 @@ ul li a:hover::before {
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 40px;
     text-align: center;
     animation: fadeIn 2.5s ease-out;
+    margin-top: auto; /* Ensures the footer is at the bottom of the page */
 }
-
-.footer-content {
+.footer-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo-section {
+    margin-bottom: 20px;
 }
 
 .footer-logo {
-    width: 50px; /* Set the logo size */
-    margin-right: 20px; /* Add space between the logo and text */
+    width: 60px; /* Adjusted for better visibility */
+    margin-bottom: 10px;
 }
 
-.footer-text h1 {
-    font-size: 20px; /* Adjust font size of the title */
-    margin: 0; /* Remove margin */
+.footer-logo-section h1 {
+    font-size: 24px;
+    margin: 5px 0;
 }
 
-.footer-text p {
-    font-size: 14px; /* Adjust font size of the description */
-    margin: 0; /* Remove margin */
-    opacity: 0.8; /* Add a slightly faded look */
+.footer-logo-section p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-social-media a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-media a:hover {
+    color: #ff6347;
 }
 
 /* Animations */
@@ -235,5 +263,14 @@ footer {
 
     .active {
         display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-social-media {
+        justify-content: center;
     }
 }
